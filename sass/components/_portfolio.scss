@@ -1,0 +1,106 @@
+.portfolio-filter {
+  display: flex;
+  justify-content: center;
+
+  margin-bottom: 50px;
+}
+
+.portfolio-filter__item {
+  &:not(:last-child) {
+    margin-right: 8px;
+  }
+}
+
+.portfolio-filter__button {
+  cursor: pointer;
+  border: 1px solid transparent;
+  border-radius: 4px;
+
+  transition: background-color 250ms $primary-cubic, color 250ms $primary-cubic;
+
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.62;
+
+  padding: 6px 22px;
+  background-color: $primary-bg-color;
+
+  &:hover,
+  &:focus {
+    background-color: $accent-color;
+    color: $color-white;
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+      0px 2px 2px rgba(0, 0, 0, 0.12);
+  }
+}
+
+.portfolio-list {
+  display: flex;
+  flex-wrap: wrap;
+  margin: -15px;
+}
+
+.portfolio-list__item {
+  transition: box-shadow 250ms $primary-cubic;
+
+  flex-basis: calc((100% - 90px) / 3);
+  margin: 15px;
+
+  &:hover,
+  &:focus {
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+      1px 4px 6px rgba(0, 0, 0, 0.16);
+  }
+}
+
+.portfolio-list__thumb {
+  position: relative;
+  overflow: hidden;
+}
+
+.portfolio-list__text {
+  position: absolute;
+  transform: translateY(100%);
+  pointer-events: none;
+
+  transition: transform 250ms $primary-cubic;
+
+  display: flex;
+  padding: 63px 24px;
+  top: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+
+  font-size: 18px;
+  line-height: 1.38;
+  color: $color-white;
+  background: $portfolio-backdrop;
+
+  .portfolio-list__link:hover &,
+  .portfolio-list__link:focus & {
+    /* opacity: 1; */
+    transform: translateY(0);
+  }
+}
+
+.description {
+  padding: 20px 24px;
+  border-left: 1px solid #eeeeee;
+  border-right: 1px solid #eeeeee;
+  border-bottom: 1px solid #eeeeee;
+}
+
+.description__title {
+  margin-bottom: 4px;
+
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+  color: $sec-fontcolor;
+}
+
+.description__technology {
+  line-height: 1.875;
+}

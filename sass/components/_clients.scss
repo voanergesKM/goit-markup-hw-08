@@ -1,0 +1,30 @@
+.clients__list {
+  display: flex;
+}
+
+.clients__item:not(:last-child) {
+  margin-right: 30px;
+}
+
+.clients__link {
+  transition: border 250ms $primary-cubic, fill 250ms $primary-cubic;
+
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 170px;
+  height: 92px;
+
+  cursor: pointer;
+
+  border: 1px solid $social-primary-color;
+  border-radius: 4px;
+
+  fill: $social-primary-color;
+
+  &:hover,
+  &k:focus {
+    fill: $accent-color;
+    border-color: $accent-color;
+  }
+}

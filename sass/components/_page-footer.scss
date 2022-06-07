@@ -1,0 +1,145 @@
+.page-footer {
+  padding-top: 60px;
+  padding-bottom: 60px;
+  background-color: $footer-bg-color;
+}
+
+.page-footer .container {
+  display: flex;
+  align-items: baseline;
+}
+
+.contact-footer {
+  margin-right: 70px;
+}
+
+.page-footer__logo {
+  display: inline-block;
+  color: $color-white;
+
+  margin-bottom: 20px;
+}
+
+.address__geo {
+  margin-bottom: 9px;
+}
+
+.address__geo-link {
+  font-style: normal;
+  line-height: 1.714;
+
+  color: $color-white;
+
+  transition: color 250ms $primary-cubic;
+  &:hover,
+  &:focus {
+    color: $accent-color;
+  }
+}
+
+.address-item:not(:last-child) {
+  margin-bottom: 9px;
+}
+
+.address-link {
+  font-style: normal;
+  line-height: 1.71;
+  color: $address-contact-color;
+
+  transition: color 250ms $primary-cubic;
+  &:hover,
+  &:focus {
+    color: $accent-color;
+  }
+}
+
+.join {
+  margin-right: auto;
+}
+
+.join__title {
+  font-weight: 700;
+  line-height: 1.14;
+  text-transform: uppercase;
+
+  color: $color-white;
+
+  margin-bottom: 20px;
+}
+
+.join__list {
+  display: flex;
+}
+
+.join__item:not(:last-child) {
+  margin-right: 10px;
+}
+
+.join__link {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  width: 44px;
+  height: 44px;
+  background: rgba(255, 255, 255, 0.1);
+
+  fill: $color-white;
+
+  transition: background-color 250ms $primary-cubic;
+
+  &:hover,
+  &:focus {
+    background-color: $accent-color;
+  }
+}
+
+.subscripe__title {
+  display: inline-block;
+  font-weight: 700;
+  line-height: 1.14;
+  text-transform: uppercase;
+
+  color: $color-white;
+
+  margin-bottom: 20px;
+}
+
+.subscripe__input {
+  width: 358px;
+  height: 50px;
+  margin-right: 12px;
+  padding: 15px 16px;
+
+  font-size: 16px;
+  line-height: 1.25;
+
+  background-color: $footer-bg-color;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  border-radius: 4px;
+  color: $address-contact-color;
+
+  transition: border-color 250ms $primary-cubic;
+
+  &::placeholder {
+    font-size: 16px;
+    line-height: 1.25;
+
+    color: $address-contact-color;
+  }
+
+  .subscribe__field:focus-within & {
+    outline: none;
+    border-color: $accent-color;
+  }
+}
+
+.subscripe__btn::after {
+  content: '';
+  margin-left: 10px;
+  fill: currentColor;
+  width: 24px;
+  height: 24px;
+  background-image: url(../images/send.svg);
+}

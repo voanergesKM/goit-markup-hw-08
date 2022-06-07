@@ -1,0 +1,40 @@
+.peculiarity__list {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.peculiarity__item {
+  flex-basis: calc(100% / 4 - 30px);
+  &:not(:last-child) {
+    margin-right: 30px;
+  }
+}
+
+.peculiarity__thumb {
+  width: 270px;
+  height: 120px;
+  background-color: $primary-bg-color;
+  margin-bottom: 30px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.peculiarity__icon {
+  width: 70px;
+  height: 70px;
+}
+
+.peculiarity__sub-title {
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 1.14;
+  text-transform: uppercase;
+  color: $sec-fontcolor;
+
+  margin-bottom: 10px;
+}
+
+.peculiarity__text {
+  line-height: 1.71;
+}
