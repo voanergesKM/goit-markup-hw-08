@@ -5,8 +5,8 @@
 }
 
 .page-footer .container {
-  display: flex;
-  align-items: baseline;
+  // display: flex;
+  // align-items: baseline;
 }
 
 .contact-footer {
@@ -68,7 +68,7 @@
 }
 
 .join__list {
-  display: flex;
+  // display: flex;
 }
 
 .join__item:not(:last-child) {
@@ -76,9 +76,9 @@
 }
 
 .join__link {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
+  // display: inline-flex;
+  // align-items: center;
+  // justify-content: center;
   border-radius: 50%;
   width: 44px;
   height: 44px;

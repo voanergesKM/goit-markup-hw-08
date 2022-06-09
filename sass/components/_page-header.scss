@@ -1,13 +1,27 @@
 .page-header {
-  padding-bottom: 25px;
-  padding-top: 25px;
+  padding-bottom: 16px;
+  padding-top: 16px;
   background-color: $color-white;
   border-bottom: 1px solid #ececec;
+
+  @media screen and (min-width: 768px) {
+    padding: 26px 0px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    padding-top: 24px;
+    padding-bottom: 25px;
+  }
+}
+
+.page-header__thumb {
 }
 
 .page-header .container {
-  display: flex;
-  align-items: center;
+  @media screen and (min-width: 768px) {
+    display: flex;
+    align-items: center;
+  }
 }
 
 .site-nav {
@@ -15,11 +29,14 @@
 }
 
 .site-nav__list {
-  display: flex;
-
   font-weight: 500;
   line-height: 1.14;
   letter-spacing: 0.02em;
+
+  @media screen and (min-width: 768px) {
+    display: flex;
+    align-items: center;
+  }
 }
 
 .site-nav__item:not(:last-child) {
@@ -29,8 +46,8 @@
 .site-nav__link {
   position: relative;
 
-  padding-top: 32px;
-  padding-bottom: 32px;
+  // padding-top: 32px;
+  // padding-bottom: 32px;
 
   color: $sec-fontcolor;
   text-decoration: none;
@@ -39,6 +56,16 @@
   &:hover,
   &:focus {
     color: $accent-color;
+  }
+
+  @media screen and (min-width: 768px) {
+    padding-top: 28px;
+    padding-bottom: 28px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    padding-top: 32px;
+    padding-bottom: 32px;
   }
 }
 
@@ -58,17 +85,20 @@
 }
 
 .contact-header {
-  display: flex;
+  @media screen and (min-width: 1200px) {
+    display: flex;
+    align-items: center;
+  }
 }
 
 .contact-header__item:not(:last-child) {
-  margin-right: 50px;
+  @media screen and (min-width: 1200px) {
+    margin-right: 50px;
+  }
 }
 
 .contact-header__link {
   transition: color 250ms $primary-cubic;
-  display: flex;
-  align-items: center;
 
   font-weight: 500;
   line-height: 1.14;
@@ -80,9 +110,21 @@
   &:focus {
     color: $accent-color;
   }
+
+  @media screen and (min-width: 1200px) {
+    display: flex;
+    align-items: center;
+  }
 }
 
 .contact-header__contact-icon {
-  margin-right: 10px;
   fill: currentColor;
+
+  @media screen and (min-width: 768px) {
+    margin-right: 8px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    margin-right: 10px;
+  }
 }

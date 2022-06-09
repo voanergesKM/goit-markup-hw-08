@@ -1,5 +1,5 @@
 .clients__list {
-  display: flex;
+  // display: flex;
 }
 
 .clients__item:not(:last-child) {
@@ -9,9 +9,9 @@
 .clients__link {
   transition: border 250ms $primary-cubic, fill 250ms $primary-cubic;
 
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
+  // display: inline-flex;
+  // align-items: center;
+  // justify-content: center;
   width: 170px;
   height: 92px;
 

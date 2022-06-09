@@ -1,6 +1,6 @@
 .portfolio-filter {
-  display: flex;
-  justify-content: center;
+  // display: flex;
+  // justify-content: center;
 
   margin-bottom: 50px;
 }
@@ -35,15 +35,15 @@
 }
 
 .portfolio-list {
-  display: flex;
-  flex-wrap: wrap;
-  margin: -15px;
+  // display: flex;
+  // flex-wrap: wrap;
+  // margin: -15px;
 }
 
 .portfolio-list__item {
   transition: box-shadow 250ms $primary-cubic;
 
-  flex-basis: calc((100% - 90px) / 3);
+  // flex-basis: calc((100% - 90px) / 3);
   margin: 15px;
 
   &:hover,
@@ -65,7 +65,7 @@
 
   transition: transform 250ms $primary-cubic;
 
-  display: flex;
+  // display: flex;
   padding: 63px 24px;
   top: 0;
   right: 0;
