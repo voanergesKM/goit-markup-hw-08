@@ -4,20 +4,55 @@
   background-color: $footer-bg-color;
 }
 
-.page-footer .container {
-  // display: flex;
-  // align-items: baseline;
+.footer-thumb {
+  @media screen and (min-width: 768px) {
+    display: flex;
+    align-items: baseline;
+  }
+
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    justify-content: space-between;
+  }
+
+  @media screen and (min-width: 1200px) {
+    margin-right: auto;
+  }
 }
 
-.contact-footer {
-  margin-right: 70px;
+.page-footer .container {
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    padding-left: 76px;
+    padding-right: 89px;
+  }
+
+  @media screen and (max-width: 1199px) {
+    text-align: center;
+  }
+
+  @media screen and (min-width: 1200px) {
+    display: flex;
+    align-items: baseline;
+  }
 }
+
+// .contact-footer {
+// }
 
 .page-footer__logo {
   display: inline-block;
   color: $color-white;
 
   margin-bottom: 20px;
+}
+
+.address {
+  @media screen and (max-width: 1199px) {
+    margin-bottom: 60px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    margin-right: 70px;
+  }
 }
 
 .address__geo {
@@ -54,7 +89,11 @@
 }
 
 .join {
-  margin-right: auto;
+  // margin-right: auto;
+
+  @media screen and (max-width: 767px) {
+    margin-bottom: 60px;
+  }
 }
 
 .join__title {
@@ -68,7 +107,11 @@
 }
 
 .join__list {
-  // display: flex;
+  display: flex;
+
+  @media screen and (max-width: 767px) {
+    justify-content: center;
+  }
 }
 
 .join__item:not(:last-child) {
@@ -76,9 +119,9 @@
 }
 
 .join__link {
-  // display: inline-flex;
-  // align-items: center;
-  // justify-content: center;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
   border-radius: 50%;
   width: 44px;
   height: 44px;
@@ -105,10 +148,17 @@
   margin-bottom: 20px;
 }
 
+.subscribe__field {
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    display: flex;
+    justify-content: center;
+  }
+}
+
 .subscripe__input {
   width: 358px;
   height: 50px;
-  margin-right: 12px;
+
   padding: 15px 16px;
 
   font-size: 16px;
@@ -132,6 +182,20 @@
   .subscribe__field:focus-within & {
     outline: none;
     border-color: $accent-color;
+  }
+
+  @media screen and (max-width: 767px) {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    margin-bottom: 20px;
+    width: 450px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    margin-right: 12px;
   }
 }
 
