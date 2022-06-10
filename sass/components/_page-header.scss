@@ -24,6 +24,8 @@
 }
 
 .page-header__thumb {
+  width: 100%;
+
   @media screen and (max-width: 767px) {
     opacity: 0;
     position: absolute;
