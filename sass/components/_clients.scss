@@ -1,18 +1,32 @@
 .clients__list {
-  // display: flex;
+  margin: -15px;
+  display: flex;
+  flex-wrap: wrap;
 }
 
-.clients__item:not(:last-child) {
-  margin-right: 30px;
+.clients__item {
+  margin: 15px;
+
+  @media screen and (max-width: 767px) {
+    flex-basis: calc((100% - 2 * 30px) / 2);
+  }
+
+  @media screen and (min-width: 768px) {
+    flex-basis: calc((100% - 3 * 30px) / 3);
+  }
+
+  @media screen and (min-width: 1200px) {
+    flex-basis: calc((100% - 6 * 30px) / 6);
+  }
 }
 
 .clients__link {
   transition: border 250ms $primary-cubic, fill 250ms $primary-cubic;
 
-  // display: inline-flex;
-  // align-items: center;
-  // justify-content: center;
-  width: 170px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
   height: 92px;
 
   cursor: pointer;
