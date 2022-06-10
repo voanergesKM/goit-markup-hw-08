@@ -118,7 +118,10 @@ img {
   }
 }
 
-.burger-menu {
+.menu-button {
+  position: relative;
+  z-index: 1;
+
   width: 40px;
   height: 40px;
 
@@ -128,18 +131,40 @@ img {
 
   border: none;
   cursor: pointer;
-  background-color: $color-white;
+  background-color: transparent;
 
   transition: fill 250ms $primary-cubic;
 
-  &:hover {
+  &:hover,
+  &:focus {
     fill: $accent-color;
   }
 
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: 767px) {
     display: none;
+  }
+
+  & .icon-cross {
+    opacity: 0;
+
+    transition: opacity 250ms $primary-cubic;
   }
 }
 
-.burger-menu__icon {
+.menu-icon {
+}
+
+.menu-button.is-open .icon-cross {
+  transition: opacity 250ms $primary-cubic;
+  opacity: 1;
+}
+
+.menu-button.is-open .icon-menu {
+  opacity: 0;
+}
+
+.icon-cross {
+}
+
+.icon-menu {
 }

@@ -23,13 +23,19 @@
         <a href="./index.html" class="page-header__logo logo link"
           ><span class="logo-accent">Web</span>Studio</a
         >
-        <button type="button" class="burger-menu">
-          <svg class="burger-menu__icon" width="40" height="40">
-            <use class="menu-cross" href="./images/sprite.svg#icon-close-modal"></use>
-            <use class="menu-burger" href="./images/sprite.svg#icon-menu"></use>
+        <button
+          type="button"
+          class="menu-button"
+          data-menu-button
+          aria-expanded="false"
+          aria-controls="menu-container"
+        >
+          <svg class="menu-icon" width="40" height="40" aria-label="Пеключатель мобильного меню">
+            <use class="icon-cross" href="./images/sprite.svg#icon-close-modal"></use>
+            <use class="icon-menu" href="./images/sprite.svg#icon-menu"></use>
           </svg>
         </button>
-        <div class="page-header__thumb">
+        <div class="page-header__thumb" id="menu-container" data-menu>
           <nav class="site-nav">
             <ul class="site-nav__list list">
               <li class="site-nav__item">
@@ -59,6 +65,20 @@
                 </svg>
                 +38 096 111 11 11</a
               >
+            </li>
+          </ul>
+          <ul class="social-header list">
+            <li class="social-header__item">
+              <a href="#" class="social-header__link link">Instagram</a>
+            </li>
+            <li class="social-header__item">
+              <a href="#" class="social-header__link link">Twitter</a>
+            </li>
+            <li class="social-header__item">
+              <a href="#" class="social-header__link link">Facebook</a>
+            </li>
+            <li class="social-header__item">
+              <a href="#" class="social-header__link link">LinkedIn</a>
             </li>
           </ul>
         </div>
