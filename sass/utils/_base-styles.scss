@@ -20,6 +20,7 @@ ul {
 img {
   display: block;
   max-width: 100%;
+  height: auto;
 }
 
 .visualy-hidden {
@@ -151,9 +152,6 @@ img {
   }
 }
 
-.menu-icon {
-}
-
 .menu-button.is-open .icon-cross {
   transition: opacity 250ms $primary-cubic;
   opacity: 1;
@@ -161,10 +159,4 @@ img {
 
 .menu-button.is-open .icon-menu {
   opacity: 0;
-}
-
-.icon-cross {
-}
-
-.icon-menu {
 }

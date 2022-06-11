@@ -149,8 +149,13 @@
             <li class="work__item">
               <div class="work__thumb">
                 <img
-                  src="./images/img1.jpg"
-                  alt="Программирование"
+                  srcset="
+                    ./images/work/desktop/desktop-soft.jpg    1x,
+                    ./images/work/desktop/desktop-soft@2x.jpg 2x,
+                    ./images/work/desktop/desktop-soft@3x.jpg 3x
+                  "
+                  src="./images/work/desktop/desktop-soft.jpg"
+                  alt="Десктопные приложения"
                   width="370"
                   height="294"
                   class="work__image"
@@ -162,8 +167,13 @@
             <li class="work__item">
               <div class="work__thumb">
                 <img
-                  src="./images/img2.jpg"
-                  alt="Адаптивная вёрстка"
+                  srcset="
+                    ./images/work/desktop/mobile-soft.jpg    1x,
+                    ./images/work/desktop/mobile-soft@2x.jpg 2x,
+                    ./images/work/desktop/mobile-soft@3x.jpg 3x
+                  "
+                  src="./images/work/desktop/mobile-soft.jpg"
+                  alt="Мобильные приложения"
                   width="370"
                   height="294"
                   class="work__image"
@@ -175,8 +185,13 @@
             <li class="work__item">
               <div class="work__thumb">
                 <img
-                  src="./images/img3.jpg"
-                  alt="Дизайн"
+                  srcset="
+                    ./images/work/desktop/design.jpg    1x,
+                    ./images/work/desktop/design@2x.jpg 2x,
+                    ./images/work/desktop/design@3x.jpg 3x
+                  "
+                  src="./images/work/desktop/design.jpg"
+                  alt="Дизайнерские решения"
                   width="370"
                   height="294"
                   class="work__image"
@@ -192,13 +207,33 @@
           <h2 class="command__title title">Наша команда</h2>
           <ul class="command__list list">
             <li class="command__item">
-              <img
-                class="command__photo"
-                src="./images/photo_demyanenko.jpg"
-                alt="Игорь Демьяненко"
-                width="270"
-                height="260"
-              />
+              <picture>
+                <source
+                  srcset="
+                    ./images/team/mobile/demyanenko.jpg     450w,
+                    ./images/team/mobile/demyanenko@2x.jpg  900w,
+                    ./images/team/mobile/demyanenko@3x.jpg 1350w
+                  "
+                  media="(max-width: 755px)"
+                  sizes="100wh"
+                />
+
+                <!-- <source
+                  srcset="
+                    ./images/team/tablet/demyanenko.jpg     450w,
+                    ./images/team/tablet/demyanenko@2x.jpg  900w,
+                    ./images/team/tablet/demyanenko@3x.jpg 1350w
+                  "
+                  media="(max-width: 755px)"
+                  sizes="100wh"
+                /> -->
+
+                <img
+                  class="command__photo"
+                  src="./images/team/mobile/demyanenko.jpg"
+                  alt="Игорь Демьяненко"
+                />
+              </picture>
               <h3 class="command__name">Игорь Демьяненко</h3>
               <p class="command__position">Product Designer</p>
               <ul class="social list">
@@ -538,6 +573,7 @@
         </form>
       </div>
     </div>
+
     <script src="./js/modal.js"></script>
     <script src="./js/mobile-menu.js"></script>
   </body>
