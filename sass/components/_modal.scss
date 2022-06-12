@@ -1,5 +1,6 @@
 .backdrop {
   position: fixed;
+  z-index: 2;
   top: 0;
   left: 0;
   width: 100%;
@@ -22,6 +23,7 @@
 
 .modal {
   position: absolute;
+
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%) scale(1);
@@ -33,6 +35,10 @@
   padding: 40px;
 
   background-color: $color-white;
+
+  @media screen and (max-width: 480px) {
+    width: calc(100% - 10px);
+  }
 
   @media screen and (min-width: 1200px) {
     width: 528px;
@@ -148,6 +154,10 @@
 .agreement {
   margin-bottom: 30px;
   margin-left: 25px;
+
+  @media screen and (max-width: 480px) {
+    margin-left: 20px;
+  }
 }
 
 .agreement__title {
@@ -157,6 +167,11 @@
   line-height: 1.714;
 
   font-size: 12px;
+
+  @media screen and (max-width: 480px) {
+    font-size: 10px;
+    letter-spacing: 0.01em;
+  }
 
   @media screen and (min-width: 1200px) {
     font-size: 14px;
@@ -188,6 +203,11 @@
   margin-right: 7px;
 
   transition: all 250ms $primary-cubic;
+
+  @media screen and (max-width: 480px) {
+    margin-left: -20px;
+    top: 1px;
+  }
 }
 
 .agreement__link {
@@ -199,6 +219,16 @@
   &:hover,
   &:focus {
     color: $hero-button-hover;
+  }
+
+  font-size: 12px;
+
+  @media screen and (max-width: 480px) {
+    font-size: 10px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    font-size: 14px;
   }
 }
 

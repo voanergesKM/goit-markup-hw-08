@@ -1,3 +1,9 @@
+.portfolio.section {
+  @media screen and (max-width: 767px) {
+    margin-top: 73px;
+  }
+}
+
 .portfolio-filter {
   display: flex;
   flex-wrap: wrap;
