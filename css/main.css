@@ -247,6 +247,10 @@ img {
   }
 }
 
+.page-header__thumb {
+  width: 100%;
+}
+
 @media screen and (max-width: 767px) {
   .page-header__thumb {
     display: -webkit-box;
