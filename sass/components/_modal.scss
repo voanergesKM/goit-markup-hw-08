@@ -10,6 +10,7 @@
 
   opacity: 1;
   transition: opacity 250ms $primary-cubic;
+  overflow-y: scroll;
 }
 
 .is-hidden {
@@ -27,6 +28,7 @@
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%) scale(1);
+
   transition: transform 250ms $primary-cubic;
 
   width: 450px;

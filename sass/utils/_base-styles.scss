@@ -42,6 +42,10 @@ img {
   padding-left: 15px;
   padding-right: 15px;
 
+  @media screen and (max-width: 479px) {
+    max-width: 480px;
+  }
+
   @media screen and (min-width: 480px) {
     width: 480px;
   }
@@ -117,46 +121,4 @@ img {
   &:focus {
     background-color: $hero-button-hover;
   }
-}
-
-.menu-button {
-  position: relative;
-  z-index: 1;
-
-  width: 40px;
-  height: 40px;
-
-  display: flex;
-  align-items: center;
-  justify-content: center;
-
-  border: none;
-  cursor: pointer;
-  background-color: transparent;
-
-  transition: fill 250ms $primary-cubic;
-
-  &:hover,
-  &:focus {
-    fill: $accent-color;
-  }
-
-  @media screen and (min-width: 767px) {
-    display: none;
-  }
-
-  & .icon-cross {
-    opacity: 0;
-
-    transition: opacity 250ms $primary-cubic;
-  }
-}
-
-.menu-button.is-open .icon-cross {
-  transition: opacity 250ms $primary-cubic;
-  opacity: 1;
-}
-
-.menu-button.is-open .icon-menu {
-  opacity: 0;
 }

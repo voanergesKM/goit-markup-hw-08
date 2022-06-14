@@ -2,8 +2,12 @@
   color: $color-black;
 
   font-family: Raleway, cursive;
-  font-size: 26px;
+  font-size: 24px;
   line-height: 1.19;
+
+  @media screen and (min-width: 1200px) {
+    font-size: 26px;
+  }
 }
 
 .logo-accent {
